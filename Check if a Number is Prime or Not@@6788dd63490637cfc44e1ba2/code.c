@@ -13,6 +13,6 @@ int main() {
         }
 
     }
-    printf("Prime");
+        printf("Prime");
     return 0;
 }
