@@ -10,15 +10,15 @@ int isPrime(int n, int divisor) {
 
 int main() {
     int num;
-    printf("Enter a number: ");
+    
     scanf("%d", &num);
 
     if (num < 2) 
-        printf("%d is not a prime number.\n", num);
+        printf("Not Prime");
     else if (isPrime(num, num / 2)) 
-        printf("%d is a prime number.\n", num);
+        printf("Prime");
     else 
-        printf("%d is not a prime number.\n", num);
+        printf("Not Prime");
 
     return 0;
 }
