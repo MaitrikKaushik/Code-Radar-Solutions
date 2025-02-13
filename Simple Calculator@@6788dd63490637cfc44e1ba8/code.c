@@ -21,6 +21,8 @@ int main(){
         divide = num1 / num2;
         printf("%d",divide);
         break;
+        default:
+        printf("error");
     }
     return 0;
 }
