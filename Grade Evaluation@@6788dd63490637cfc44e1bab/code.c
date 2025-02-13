@@ -3,15 +3,15 @@ int main(){
     char a;
     scanf("%c",&a);
     switch(a){
-        case "A":
+        case 'A':
         printf("Excellent");
-        case "B":
+        case 'B':
         printf("Good");
-        case "C":
+        case 'C':
         printf("Average");
-        case "D":
+        case 'D':
         printf("Below Average");
-        case "F":
+        case 'F':
         printf("Fail");
         default:
         printf("Invalid grade");
