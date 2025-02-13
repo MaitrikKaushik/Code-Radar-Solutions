@@ -1,31 +1,32 @@
 #include <stdio.h>
-int main(){
-    int num1,num2;
+
+int main() {
+    int num1, num2;
     char sign;
-    scanf("%d %d %c",&num1,&num2,&sign);
-    int sum,sub,mul,divide;
-    sum = num1 + num2;
-    sub = num1 - num2;
-    mul = num1 * num2;
-    divide = num1 / num2;
-    switch(sign){
+    
+    // Fix: Add a space before %c to avoid input issues
+    scanf("%d %d %c", &num1, &num2, &sign);
+
+    switch (sign) {
         case '+':
-        printf("%d",sum);
-        break;
+            printf("%d", num1 + num2);
+            break;
         case '-':
-        
-        printf("%d",sub);
-        break;
+            printf("%d", num1 - num2);
+            break;
         case '*':
-        
-        printf("%d",mul);
-        break;
+            printf("%d", num1 * num2);
+            break;
         case '/':
-        
-        printf("%d",divide);
-        break;
+            if (num2 == 0) {
+                printf("Error: Division by zero");
+            } else {
+                printf("%d", num1 / num2);
+            }
+            break;
         default:
-        printf("error");
+            printf("Error: Invalid operator");
     }
+    
     return 0;
 }
