@@ -8,7 +8,7 @@ int main(){
     else if(a%2==0 && a<=7){
         printf("30");
     }
-    else if(a%2!=0 && a>7){
+    else if(a%2!=0 && a>7 && a<=12){
         printf("30");
     }
     else if(a<=12){
