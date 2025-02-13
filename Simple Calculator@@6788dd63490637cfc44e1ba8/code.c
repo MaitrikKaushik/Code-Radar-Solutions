@@ -4,19 +4,19 @@ int main(){
     char sign;
     scanf("%d %d %c",&num1,&num2,&sign);
     switch(sign){
-        case "+":
+        case '+':
         int sum = num1 + num2;
         printf("%d",sum);
         break;
-        case "-":
+        case '-':
         int sub = num1 - num2;
         printf("%d",sub);
         break;
-        case "*":
+        case '*':
         int mul = num1 * num2;
         printf("%d",mul);
         break;
-        case "/":
+        case '/':
         int divide = num1 / num2;
         printf("%d",divide);
         break;
