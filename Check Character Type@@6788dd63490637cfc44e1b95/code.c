@@ -1,16 +1,24 @@
 #include <stdio.h>
 #include <ctype.h>
 
-int main(){
-    char c;
-    scanf("%c",c);
-    if(((c=='a')||(c=='e')||(c=='i')||(c=='o')||(c=='u'))){
-        printf("Vowel");
+int main() {
+    char ad;
+    scanf("%c", &ad);
 
+    if (isdigit(ad)) {
+        printf("Digit\n");
+    } 
+    else if (isalpha(ad)) {
+        ad = tolower(ad); 
+        if (ad == 'a' || ad == 'e' || ad == 'i' || ad == 'o' || ad == 'u') {
+            printf("Vowel\n");
+        } else {
+            printf("Consonant\n");
+        }
+    } 
+    else {
+        printf("Special Character\n");
     }
-    else{
-        printf("Consonant");
-    }
+
     return 0;
-
 }
