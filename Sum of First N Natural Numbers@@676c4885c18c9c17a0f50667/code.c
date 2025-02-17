@@ -3,11 +3,12 @@ int main(){
     int n;
     scanf("%d",&n);
     int a;
+    int b;
     while(n!=0){
         a = n % 10;
-        a = a + n;
+        b = b + a;
         n = n / 10;
     }
-    printf("%d",a);
+    printf("%d",b);
     return 0;
 }
