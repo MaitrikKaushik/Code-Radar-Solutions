@@ -4,11 +4,10 @@ int main(){
     scanf("%d",&n);
     int a;
     int b;
-    while(n!=0){
-        a = n % 10;
-        b = b + a;
-        n = n / 10;
+    for(int i=1,i<=n,i++){
+        a = a + i;
+       
     }
-    printf("%d",b);
+    printf("%d",a);
     return 0;
 }
